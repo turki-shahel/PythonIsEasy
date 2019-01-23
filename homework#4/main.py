@@ -3,22 +3,30 @@
         by Turki Shahel'''
 
 myUniqueList = []
-rejectedList = []
-def AddItemToList(item):
+myLeftovers = []
+def addItemToList(item):
     if(myUniqueList.__contains__(item)):
-        rejectedList.append(item)
+        myLeftovers.append(item)
         return False
     else:
         myUniqueList.append(item)
         return True
 
-AddItemToList("first born")
+addItemToList('Python is Easy')
+addItemToList(3.7)
+addItemToList('homework #4')
+addItemToList(2019)
+addItemToList('January')
+addItemToList('100%')
+
 print(myUniqueList)
-AddItemToList(1)
-AddItemToList("20")
+print(myLeftovers)
+
+addItemToList(3.7)
+addItemToList('January')
+addItemToList('january')
+addItemToList(2019)
+addItemToList('2019')
+
 print(myUniqueList)
-AddItemToList(1)
-print(myUniqueList)
-print(rejectedList)
-AddItemToList("20")
-print(myUniqueList,rejectedList)
+print(myLeftovers)
