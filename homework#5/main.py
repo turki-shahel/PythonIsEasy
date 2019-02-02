@@ -11,6 +11,6 @@ for counter in range(1,101):
         print('[',counter,']','Buzz')
     if counter % 3 == 0 and counter % 5 == 0:
         print('[',counter,']','FizzBuzz')
-    if counter % 2 != 0:
+    if counter % counter == 0 and counter % 1 == 0 and counter % 2 !=0:
         print('[',counter,']','Prime')
 
